@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 David Yeung
+ * Copyright 2011 David Yeung
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,18 @@
 
 package org.jcoffeescript;
 
-public enum Option {
-	BARE,
-    CONTINUOUS_COMPILE,
-    NOT_RECURSIVE
+import java.io.File;
+
+/**
+ * Created by IntelliJ IDEA.
+ * User: takeshita
+ * Date: 11/06/03
+ * Time: 12:12
+ * To change this template use File | Settings | File Templates.
+ */
+public interface FileChangeListener {
+
+    public void onUpdate(String filePath);
+    public void onCreate(String filePath);
+    public void onDelete(String filePath);
 }
