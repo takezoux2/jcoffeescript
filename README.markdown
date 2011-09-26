@@ -12,8 +12,17 @@ from the command prompt:
        })();
 </pre>
 
+
 ####Command Line (unix/windows): 
 >    java -jar jcoffeescript-1.1.jar < foo.coffee > foo.js
+
+####Continuous compile mode
+
+>    java -jar jcoffeescript-1.1.jar --cc --bare
+
+Check current directory .coffee files and observe their changes.
+If files are changed, it recompiles them automatically.
+
 
 ####command line options:  
 >    __--bare__   - compile the javascript without top-level function safety wrapper.  

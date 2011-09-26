@@ -16,7 +16,6 @@
 
 package org.jcoffeescript;
 
-import com.sun.org.apache.bcel.internal.classfile.FieldOrMethod;
 
 import java.io.*;
 import java.text.Normalizer;
